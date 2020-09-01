@@ -1,0 +1,36 @@
+@import "./vars";
+
+.header {
+  background: $bg-image no-repeat center right / cover;
+  height: 100vh;
+  color: #fff;
+
+  &__logo {
+    width: 70px;
+    height: 70px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  &__top {
+    max-width: $website-width;
+    padding: 0 1.5rem;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  &__main {
+    text-align: center;
+    padding-top: 20%;
+
+    &--me {
+      font-size: 4rem;
+      line-height: 1.2;
+    }
+
+    &--about {
+      font-size: 1.3rem;
+      margin-bottom: 2rem;
+    }
+  }
+}

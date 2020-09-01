@@ -1,3 +1,6 @@
-h1 {
-  color: green;
-}
+@import "./vars.scss";
+@import "./reset.scss";
+@import "./header.scss";
+@import "./nav.scss";
+@import "./container.scss";
+@import "./buttons";

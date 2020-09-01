@@ -3,11 +3,47 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FE Template</title>
+    <title>Andrii Mishtal | Frontend developer</title>
     <link rel="stylesheet" href="./styles/style.scss">
-    <script defer src="./scripts/main.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    >
+
+    <script
+      src="https://kit.fontawesome.com/1cd99e8dad.js"
+      crossorigin="anonymous">
+    </script>
   </head>
   <body>
-    <h1>FE Template</h1>
+    <header class="header">
+      <div class="header__top">
+        <nav class="nav">
+          <img
+            class="header__logo"
+            src="./images/logo.png"
+            alt="logo"
+          >
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link nav__link--current" href="index.html">Home</a></li>
+            <li class="nav__item"><a class="nav__link" href="index.html">About</a></li>
+            <li class="nav__item"><a class="nav__link" href="index.html">Work</a></li>
+            <li class="nav__item"><a class="nav__link" href="index.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header__main">
+          <h1 class="header__main--me">I Am Andrii The Frontend Developer
+            <span
+              class="txt-type"
+            >
+            </span>
+          </h1>
+          <p class="header__main--about">Well-motivated Software Engineer looking for new opportunities</p>
+          <a class="btn-light" href="#">View My Work</a>
+        </div>
+      </div>
+    </header>
+
+    <script src="./scripts/main.js"></script>
   </body>
 </html>
