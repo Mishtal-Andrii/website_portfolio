@@ -1,0 +1,29 @@
+@import "./vars.scss";
+
+.footer {
+  background: $dark-color;
+  color: #fff;
+  height: 5rem;
+
+  &__content {
+    display: flex;
+      
+    justify-content: space-between;
+    height: 5rem;
+    align-items: center;
+  }
+
+  &__network .fab {
+    cursor: pointer;
+    margin-right: 1rem;
+    border: 2px #fff solid;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+
+    &:hover {
+      background: $main-color;
+    }
+  }
+}

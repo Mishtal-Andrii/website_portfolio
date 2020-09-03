@@ -6,3 +6,11 @@
   margin: 0 auto;
   overflow: hidden;
 }
+
+.bottom-line {
+  height: 2px;
+  width: 3rem;
+  background: $main-color;
+  display: block;
+  margin: 0 auto 1rem;
+}

@@ -1,0 +1,62 @@
+@import "./vars.scss";
+
+.process {
+  text-align: center;
+  padding: 2rem 0;
+  
+
+  &__about {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    
+  }
+
+  .process-box {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.5rem;
+    text-align: center;
+
+  
+    &__step {
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 20px;
+      background: $main-color;
+      border-radius: 50%;
+      height: 15px;
+      width: 15px;
+      line-height: 1px;
+      padding: 1rem;
+      transition: all 1s;
+    }
+    
+    &__icon {
+      cursor: pointer;
+      margin: 2rem 0;
+      border-radius: 50%;
+      background: $dark-color;
+      color: #fff;
+      width: 70px;
+      height: 70px;
+      line-height: 70px;
+      text-align: center;
+      position: relative;
+      transition: all 1s;
+
+      &:hover {
+        background: $main-color;
+        width: 90px;
+        height: 90px;
+        line-height: 90px;
+
+        .process-box__step {
+          background: $dark-color;
+        }
+      }
+    }
+  }
+}
