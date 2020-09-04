@@ -50,33 +50,45 @@
         <h2 class="contact__title">Contact Me</h2>
         <div class="bottom-line"></div>
         <p class="contact__heading">Here is how you can reach me</p>
-        <form>
+        <form
+          method="POST"
+          data-netlify="true"
+          data-netlify-recaptcha="true"
+        >
           <div class="contact-form">
             <input
               type="text"
               class="contact-form__input contact-form__input--name"
               placeholder="Name"
+              name="name"
             >
             <input
               type="text"
               class="contact-form__input contact-form__input--subject"
               placeholder="Subject"
+              name="subject"
             >
             <input
               type="email"
               class="contact-form__input contact-form__input--email"
               placeholder="Email Adress"
+              name="email"
             >
             <input
               type="text"
               class="contact-form__input contact-form__input--phone"
               placeholder="Phone Number"
+              name="phone"
             >
 
             <textarea
               class="contact-form__input contact-form__input--message"
               placeholder="Enter Message"
+              name="message"
            ></textarea>
+            <div class="contact-netify">
+              <div data-netlify-recaptcha="true"></div>
+            </div>
           </div>
           <button type="submit" class="btn-dark">Submit</button>
         </form>

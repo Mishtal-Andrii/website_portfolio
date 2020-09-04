@@ -25,34 +25,37 @@
       "message message";
     grid-gap: 1.2rem;
     margin-bottom: 1.2rem;
-  
+
+    .contact-netify {
+      margin: 2rem 0;
+
+    }
+
+    &__input {
+      padding: 0.5rem 1rem;
+
+      &--name {
+        grid-area: name;
+      }
+
+      &--subject {
+        grid-area: subject;
+      }
+
+      &--email {
+        grid-area: email;
+      }
+
+      &--phone {
+        grid-area: phone;
+      }
+
+      &--message {
+        grid-area: message;
+        height: 100px;
+      }
+    }
   }
-
-  &__input {
-    padding: 0.5rem 1rem;
-
-    &--name {
-      grid-area: name;
-    }
-
-    &--subject {
-      grid-area: subject;
-    }
-
-    &--email {
-      grid-area: email;
-    }
-
-    &--phone {
-      grid-area: phone;
-    }
-
-    &--message {
-      grid-area: message;
-      height: 300px;
-    }
-  }
-
   button[type="submit"] {
     width: 50%;
   }
@@ -76,7 +79,7 @@
 .contact-start {
   padding: 4rem 0;
   background: $main-color;
-  
+
   &__info {
     text-align: center;
     font-size: 4rem;
