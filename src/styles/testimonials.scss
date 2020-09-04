@@ -1,0 +1,48 @@
+@import "./vars.scss";
+
+.testimonials {
+  padding: 4rem 0;
+
+  &__heading {
+    font-size: 2rem;
+    display: block;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    font-weight: 100;
+    text-transform: uppercase;
+  }
+
+  &__info {
+    font-size: 2rem;
+    display: block;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    font-weight: 100;
+    text-transform: uppercase;
+  }
+
+  &__about {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.5rem;
+
+    &--list {
+      margin-top: 1rem;
+      display: flex;
+      align-items: center;
+    }
+    
+    &--feedback {
+      border: 1px solid $medium-color;
+      border-radius: 5px;
+      padding: 0.5rem;
+    }
+
+    &--image {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 0.5rem;
+    }
+  }
+}

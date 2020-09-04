@@ -1,0 +1,43 @@
+@import "./vars.scss";
+
+.about-link {
+  text-align: center;
+  padding: 3rem 0;
+
+  &__info {
+    display: grid;
+    grid-template-areas: "bioimage bio bio"
+      "aw1 aw2 aw3";
+    grid-gap: 1.2rem;
+
+    &--image {
+      grid-area: bioimage;
+    }
+  }
+
+  &__bio {
+    grid-area: bio;
+    border-left: 3px solid $main-color;
+    padding: 0.8rem;
+
+    &--first {
+      grid-area: aw1;
+    }
+
+    &--second {
+      grid-area: aw2;
+    }
+
+    &--third {
+      grid-area: aw3;
+    }
+  }
+
+  
+  &__awards--first .fas,
+  &__awards--second .fas,
+  &__awards--third .fas {
+    color: $main-color;
+    margin: 1rem;
+  }
+}

@@ -1,0 +1,66 @@
+@import "./vars.scss";
+
+.progress {
+  background: $dark-color;
+  padding: 3rem 0;
+  
+  &__heading {
+    color: $light-color;
+  }
+
+  &__title {
+    color: $light-color;
+    font-size: 2rem;
+    display: block;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    font-weight: 100;
+    text-transform: uppercase;
+  }
+
+  &__about {
+    overflow: hidden;
+    height: 20px;
+    background: $medium-color;
+    border-radius: 5px;
+    margin-bottom: 0.3rem;
+
+    &--scale1,
+    &--scale2,
+    &--scale3,
+    &--scale4 {
+      height: 100%;
+      color: #fff;
+      text-align: center;
+      background: $main-color;
+    }
+
+    &--scale1,
+    &--scale2 {
+      width: 100%;
+    }
+
+    &--scale3 {
+      width: 70%;
+    }
+
+    &--scale4 {
+      width: 65%;
+    }
+  }
+}
+
+.progress-logo {
+  padding: 4rem 0;
+  background: $light-color;
+  
+  &__about {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+  }
+
+  img {
+    width: 70%;
+  }
+}

@@ -1,0 +1,7 @@
+@import "./vars.scss";
+
+.header-about {
+  background: $bg-image no-repeat 20% 20% / cover;
+  height: 5.5rem;
+  border-bottom: 3px solid $main-color;
+}
